@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import breakdownstore from './Redux/Store';
 import { ToastContainer } from 'react-toastify';
-import BreakdownPage from './Page/BreakdownPage';
 import Breakdown from './Component/Breakdown/Breakdown';
 import ResponsiveAppBar from './Component/Navbar/ResponsiveNavbar';
 import { CssBaseline, ThemeProvider, createTheme } from '@mui/material';

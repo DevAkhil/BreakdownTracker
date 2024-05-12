@@ -59,7 +59,6 @@ import {
     useEffect(() => {
       setFormData((prevData) => ({
         ...prevData,
-        companyName: '1111111111',
       }));
   
       if (Object.keys(editObj).length > 0) {
