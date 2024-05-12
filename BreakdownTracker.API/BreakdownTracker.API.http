@@ -1,0 +1,6 @@
+@BreakdownTracker.API_HostAddress = http://localhost:5058
+
+GET {{BreakdownTracker.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
