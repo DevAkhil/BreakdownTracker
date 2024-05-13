@@ -2,7 +2,7 @@ import axios from "axios";
 import { AddRequest, UpdateRequest, fetchAllDataFailure, fetchAllDataSuccess, fetchByRefSuccess, fetchDataRequest } from "./Action";
 import { toast } from "react-toastify";
 
-const baseURL = "https://localhost:44337/api/Breakdown";
+const baseURL = "https://localhost:7276/api/Breakdown";
 
 export const GetAllBreakdowns=()=>{
     return (dispatch)=>{
