@@ -46,7 +46,7 @@ Breakdown Tracker is an application designed to track breakdown incidents. It ut
         ```bash
         cd breakdowntracker.ui
         ```
-    - Ensure the base URL in the ActionCreator.js points to the correct backend API URL.
+    - Ensure the base URL in the src/Redux/ActionCreator.js points to the correct backend API URL.
     - Install dependencies:
         ```bash
         npm install
