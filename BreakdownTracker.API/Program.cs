@@ -4,8 +4,7 @@ using BreakdownTracker.Domain.Repositories;
 using BreakdownTracker.Infrastructure.Context;
 using BreakdownTracker.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
