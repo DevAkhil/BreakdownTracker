@@ -1,4 +1,4 @@
-**Project Name: Breakdown Tracker - ASP.NET Core Web API with React**
+# Breakdown Tracker - ASP.NET Core Web API with React
 
 ---
 
@@ -32,6 +32,7 @@ Breakdown Tracker is an application designed to track breakdown incidents. It ut
             ```
             Update-Database
             ```
+    - Set BreakdownTracker.API as the start-up project.
     - Start the backend API by pressing F5 or clicking on the Start button in Visual Studio.
 
 3. **Frontend Setup:**
