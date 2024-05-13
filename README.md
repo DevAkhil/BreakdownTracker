@@ -10,6 +10,11 @@ Breakdown Tracker is an application designed to track breakdown incidents. It ut
 - [Node.js](https://nodejs.org/)
 - [npm](https://www.npmjs.com/) (installed automatically with Node.js)
 - [Visual Studio 2022](https://visualstudio.microsoft.com/) / [Visual Studio Code](https://code.visualstudio.com/) 
+### YouTube Video:
+[![Breakdown Tracker Demo](https://i.imgur.com/IwPeAVt.png)](https://www.youtube.com/watch?v=_P3oEPLy9xc)
+
+[Watch a demo of Breakdown Tracker in action on YouTube.](https://www.youtube.com/watch?v=_P3oEPLy9xc)
+
 
 ### Installation:
 
