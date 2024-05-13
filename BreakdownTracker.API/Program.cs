@@ -33,7 +33,15 @@ builder.Services.AddCors(options =>
 builder.Services.AddScoped<IBreakdownRepository, BreakdownRepository>();
 builder.Services.AddApplicationServices();
 
+
+
 var app = builder.Build();
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var dbContext = services.GetRequiredService<BreakdownTrackerContext>();
+    dbContext.Database.EnsureCreated();
+}
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

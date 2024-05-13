@@ -2,10 +2,12 @@ import axios from "axios";
 import { AddRequest, UpdateRequest, fetchAllDataFailure, fetchAllDataSuccess, fetchByRefSuccess, fetchDataRequest } from "./Action";
 import { toast } from "react-toastify";
 
+const baseURL = "https://localhost:44337/api/Breakdown";
+
 export const GetAllBreakdowns=()=>{
     return (dispatch)=>{
         dispatch(fetchDataRequest());
-        axios.get("https://localhost:7276/api/Breakdown").then(res=>{
+        axios.get(baseURL).then(res=>{
             const _list = res.data;
             dispatch(fetchAllDataSuccess(_list))
         }).catch(err=>{
@@ -17,7 +19,7 @@ export const GetAllBreakdowns=()=>{
 export const CreateBreakdown=(data)=>{
     return (dispatch)=>{
         dispatch(fetchDataRequest());
-        axios.post("https://localhost:7276/api/Breakdown",data).then(res=>{
+        axios.post(baseURL,data).then(res=>{
             const item = res.data;
             dispatch(AddRequest(item))
             toast.success('Breakdown created successfully')
@@ -30,7 +32,7 @@ export const CreateBreakdown=(data)=>{
 export const UpdateBreakdown=(breakdownReference, data)=>{
     return (dispatch)=>{
 
-        axios.put("https://localhost:7276/api/Breakdown/"+breakdownReference, data).then(res=>{
+        axios.put(`${baseURL}/${breakdownReference}`, data).then(res=>{
             const item = res.data;
             dispatch(UpdateRequest(item))
             toast.success('Breakdown updated successfully')
@@ -44,7 +46,7 @@ export const UpdateBreakdown=(breakdownReference, data)=>{
 export const FetchBreakdownByRef=(ref)=>{
     return (dispatch)=>{
         dispatch(fetchDataRequest());
-        axios.get("https://localhost:7276/api/Breakdown/"+ref).then(res=>{
+        axios.get(`${baseURL}/${ref}`).then(res=>{
             const _obj = res.data;
             dispatch(fetchByRefSuccess(_obj));
         }).catch(err=>{
